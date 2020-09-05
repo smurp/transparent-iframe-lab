@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      input {
+	  margin: 10.7%;
+	  display: inline;
+      }
+      iframe {
+	  display: block;
+	  position: absolute;
+	  scrolling: 0;
+	  padding: 0;
+	  width: 45%;
+	  height: 45%;
+	  background-color: rgba(0,0,255,.1);	  
+      }
+      #tranny {
+	  border: 1em dashed rgba(0,255,0,0.2);
+      }
+      #opaque {
+	  border: 1em dashed rgba(255,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/>
+    <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/>
+    <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/>
+    <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/> <input type="checkbox"/>
+    <iframe title="contents are transparent but iframe isn't, so failure"
+      id="tranny" style="left:0;top:0;" src="trans.html"></iframe>
+    <iframe title="contents are transparent but iframe isn't, so failure"
+      id="opaque" style="right:0;top:0;" src="opaque.html"></iframe>
+    <iframe title="iframe is transparent but the fact that some regions are clickable is ignored"
+      id="tranny" style="left:0;bottom:0;pointer-events:none; background-color: transparent" src="trans.html"></iframe>
+    <!--
+    <iframe id="opaque" style="right:0;bottom:0;" src="iframeTestNottranny.html"></iframe>
+    -->
+    <dl style="position:absolute; top: 50%; left: 50%">
+      <dt>Purpose:<dd>using only CSS make IFRAMEs which
+	  are transparent to clicks but which themselves contain clickable elements
+      <dt>Conclusion:<dd>"semi-transparent" IFRAMEs are not possible with pure CSS
+      <dt>Details:<dd>
+	The only way to make an IFRAME "transparent" to clicks
+	is to set "pointer-events: none" on the IFRAME itself,
+	not merely on the HTML and/or BODY tags within it.
+	When the whole IFRAME is "transparent" then no
+	item within it can be made "opaque" (eg clickable).
+
+    </dl>
+  </body>
+</html>

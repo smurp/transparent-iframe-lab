@@ -1,0 +1,29 @@
+#trans {
+    pointer-events: none;
+}
+.TRANS {
+    pointer-events: none;
+    border: .2em solid rgba(0,255,0,0.2);
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 40%;
+    height: 40%;
+}
+.OPAQUE {
+    pointer-events: auto;
+    border: .2em solid rgba(255,0,0,0.2);
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 40%;
+    height: 40%;
+}
+.stamp {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin: -13%;
+    width: 50%;
+    transform: rotate(-45deg);
+}

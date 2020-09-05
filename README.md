@@ -27,6 +27,10 @@ to them.
 
 If you can demonstrate a remedy to this connundrum please drop a line to `smurp@smurp.com`
 
+## Irrelevant Approaches
+
+* `allowtransparency` is only about appearance not events (also it is [obsolete](https://html.spec.whatwg.org/multipage/obsolete.html))
+
 ## Prior work
 
 * https://stackoverflow.com/questions/41418413/how-to-overlay-an-iframe-and-allow-click-through

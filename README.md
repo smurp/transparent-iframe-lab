@@ -27,7 +27,11 @@ to them.
 
 If you can demonstrate a remedy to this connundrum please drop a line to `smurp@smurp.com`
 
+## Prior work
 
+* https://stackoverflow.com/questions/41418413/how-to-overlay-an-iframe-and-allow-click-through
+* https://stackoverflow.com/questions/2094668/overlay-div-over-iframe
+* many others but no more fruitful
 
 
 
